@@ -1,10 +1,28 @@
-# Message Delete Bot
+# Telegram Delete Messages Bot
 
-## Get Started
-0. Install your pip requirements to your Python environemnt. You can do this by running:
+## Requirements
+- A telegram account.
+- Python 3.6 or higher.
+
+## Installation
+### 1. Clone the repository to your local machine
+
+Using git:
+```cmd
+git clone https://github.com/ZackPlauche/telegram-delete-messages-bot.git
+```
+Using GitHub CLI:
+```
+gh repo clone ZackPlauche/telegram-delete-messages-bot
+```
+
+### 2. Install Python dependencies 🐍
 ```cmd
 pip install -r requirements.txt
 ```
+
+
+## Get Started
 1. Enter the desired `KEYWORDS` that should appear in the messages to be deleted. You can find this variable on line 6 in the `main.py` file. For example:
 ```python
 # This will delete any message that contains a telegram sharing link with the t.me format.
