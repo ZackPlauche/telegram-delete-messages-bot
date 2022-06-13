@@ -16,7 +16,7 @@ KEYWORDS = ['hi']
 # This would delete any messages that contain either of them:
 KEYWORDS = ['https://t.me/', 'hi']
 ``` 
-2. Run the script: `python main.py`
+2. Run the script: `python main.py` and follow the prompt, or continue reading this README.
 3. Get your `API_ID` and `API_HASH` from [this link](https://my.telegram.org/auth). If you need help finding them, follow the items below:
     1. Login by entering your phone number then entering the code it sends you. The code is sent in the telegram app connected to that phone number.
     2. Click on the "API development tools" link.
