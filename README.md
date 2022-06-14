@@ -1,43 +1,17 @@
-# Telegram Delete Messages Bot
+# Boof's Telegram Delete Bot
+Initially created using [Telegram Bot Template]() by [Zack Plauché](https://www.zackplauche.com).
 
 ## Requirements
-- A telegram account.
-- Python 3.6 or higher.
+- A Telegram Bot from the Botfather with admin permissions in the group you'd like him to delete messages in.
 
-## Installation
-### 1. Clone the repository to your local machine
-
-Using git:
-```cmd
-git clone https://github.com/ZackPlauche/telegram-delete-messages-bot.git
+## Setup
+Install Python Requirements
 ```
-Using GitHub CLI:
-```
-gh repo clone ZackPlauche/telegram-delete-messages-bot
-```
-
-### 2. Install Python dependencies 🐍
-```cmd
 pip install -r requirements.txt
 ```
 
+## Getting Started
 
-## Get Started
-1. Enter the desired `KEYWORDS` that should appear in the messages to be deleted. You can find this variable on line 6 in the `main.py` file. For example:
-```python
-# This will delete any message that contains a telegram sharing link with the t.me format.
-KEYWORDS = ['https://t.me/']
-
-# This would delete any message that contains the adjacent letters of 'h' and 'i', for example: hippo, hipotenuse, hi, etc.
-KEYWORDS = ['hi']
-
-# This would delete any messages that contain either of them:
-KEYWORDS = ['https://t.me/', 'hi']
-``` 
-2. Run the script: `python main.py` and follow the prompt, or continue reading this README.
-3. Get your `API_ID` and `API_HASH` from [this link](https://my.telegram.org/auth). If you need help finding them, follow the items below:
-    1. Login by entering your phone number then entering the code it sends you. The code is sent in the telegram app connected to that phone number.
-    2. Click on the "API development tools" link.
-    3. Copy your api_id and api_hash and paste them in their respective variables in the input when first running the script ***OR*** in the `config.ini` file that's generated after the first time they're entered in.
-4. Enter the `CHAT_ID` of the chat you wish to delete messages in the prompt that appears when running the script ***OR*** you can set a default chat in the `config.ini` file generated after the first time you run the script. You can get this (if you don't have it already) by adding the IDBOt (Username: @myidbot) to the group and entering the command `/getgroupid@myidbot`. ***YOU MUST HAVE ADMIN PRIVLEDGES IN THIS GROUP / CHANNEL / CHAT TO DELETE MESSAGES.***
-5. If it's your first time running the script it, it will ask you to login. Follow the instructions it provides to run the script and it will generate a file that looks something like `anon.session` in this project's base directory (where requirements.txt and what not is). This is just so you don't have to login every single time you run the script.
+1. Add your bot token to the `TOKEN` setting in `settings.py`.
+2. Add any additional keywords you'd like to delete to the `KEYWORDS_TO_DELETE` setting in `settings.py`.
+3. Run the bot: `python bot.py`

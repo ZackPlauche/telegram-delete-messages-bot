@@ -1,7 +1,4 @@
-anon.session
 Pipfile
-virtualenv
-venv
-*.pyc
-.env
-config.ini
+locals.py
+local_settings.py
+__pycache__
