@@ -1,5 +1,5 @@
 # Boof's Telegram Delete Bot
-Initially created using [Telegram Bot Template]() by [Zack Plauché](https://www.zackplauche.com).
+Initially created using [Telegram Bot Template](https://www.github.com/zackplauche/telegram-bot-template) by [Zack Plauché](https://www.zackplauche.com).
 
 ## Requirements
 - A Telegram Bot from the Botfather with admin permissions in the group you'd like him to delete messages in.
